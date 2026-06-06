@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<form action="/search">
+
+    <input
+        type="text"
+        name="artist"
+        placeholder="Artista"
+    >
+
+    <input
+        type="text"
+        name="genre"
+        placeholder="Género"
+    >
+
+    <input
+        type="text"
+        name="country"
+        placeholder="País"
+    >
+
+    <button>
+        Buscar
+    </button>
+
+</form>
+
+{% endblock %}

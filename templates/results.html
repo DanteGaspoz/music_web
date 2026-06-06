@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Resultados</h2>
+
+{% for artist in results %}
+
+<div class="artist-card">
+
+    <h3>{{ artist.name }}</h3>
+
+    <p>
+        País:
+        {{ artist.country }}
+    </p>
+
+    <p>
+        Oyentes:
+        {{ artist.listeners }}
+    </p>
+
+    <p>
+        Géneros:
+        {{ artist.tags|join(", ") }}
+    </p>
+
+</div>
+
+{% endfor %}
+
+{% endblock %}
