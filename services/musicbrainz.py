@@ -18,5 +18,5 @@ def get_artist_country(artist):
             "country",
             "Unknown"
         )
-
+    
     return "Unknown"

@@ -1,7 +1,10 @@
 import requests
+from dotenv import load_dotenv
 import os
 
+load_dotenv()
 LASTFM_API_KEY = os.getenv("LASTFM_API_KEY")
+print("API KEY:", LASTFM_API_KEY)
 
 
 def get_artist_info(artist):
